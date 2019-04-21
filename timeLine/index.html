@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- load JQuery for animation -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- load TweenLite to improve and extend JQuery animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/jquery.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
+    <!-- load JQuery mobile & touch punch to allow for touchscreen swiping -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <!-- load scale site code for editing -->
+    <script src="js/scale-site.js?section"></script>
+    <!-- load navigation and animation code -->
+    <script src="js/touchscreen_app.js"></script>
+    <!-- link to css -->
+    <link rel="stylesheet" href="css/touchscreen_app.css" />
+    <meta charset="UTF-8">
+    <title>Cobourg Timeline</title>
+</head>
+
+<body data-role="page">
+    <!-- SCREEN 1 -->
+    <section id="one">
+       
+        <!-- background video -->
+        <video id="video1" class="forward" width="1920 " height="1080" preload="auto">
+            <source src="./videos/vid1/screen1.mp4" /> </video>
+        <video id="video1reverse" class="reverse" width="1920 " height="1080" preload="auto">
+            <source src="./videos/vid1/screen1reverse.mp4" /> </video>
+
+        <!-- popup content -->
+
+        <img id="popup1btn1" class="popupbtn" data-num="1" data-type="static" src="images/popup.png" />
+        <div id="popup1content1" class="popupcontent">
+            <img class="handle close"   src="./cloudtext/cloud1.png" width="700" height="auto" />
+        </div>
+
+        
+        <!-- Pop up 2 -->
+    <img id="popup2btn1" class="popupbtn" data-num="2" data-type="static" src="images/popup.png" />
+        <div id="popup2content1" class="popupcontent">
+                <img class="handle close"   src="./cloudtext/cloud2.png" width="700" height="auto" />
+  
+        </div>
+        <img class="pag1" src="./images/page1.png" />
+        <!-- navigation -->
+        <img class="next" src="images/nextarrow.png" />
+
+    </section>
+
+    <!-- SCREEN 2 -->
+    <section id="two">
+        <!-- background video -->
+        <video id="video2" class="forward" width="1920 " height="1080" preload="auto">
+            <source src="./videos/vid2/screen2.mp4" /> </video>
+        <video id="video2reverse" class="reverse" width="1920 " height="1080" preload="auto">
+            <source src="./videos/vid2/screen2reverse.mp4" /> </video>
+        
+        <img id="popup1btn2" class="popupbtn" data-num="1" data-type="static" src="images/popup.png" />
+        <div id="popup1content2" class="popupcontent">
+            <img class="handle close" src="./cloudtext/cloud3.png" width="700" height="auto" />
+        </div>
+
+        <img id="popup2btn2" class="popupbtn" data-num="2" data-type="static" src="images/popup.png" />
+        <div id="popup2content2" class="popupcontent">
+
+            <img class="handle close" src="./cloudtext/cloud4.png" width="700" height="auto" />
+        </div>
+        <img class="pag2" src="./images/page2.png" />
+        <!-- navigation -->
+        <img class="prev" src="images/prevarrow.png" />
+        <img class="next" src="images/nextarrow.png" />
+    </section>
+
+
+
+
+
+
+    <!-- SCREEN 3 -->
+    <section id="three">
+        <!-- background video -->
+        <video id="video3" class="forward" width="1920 " height="1080" preload="auto">
+            <source src="./videos/vid3/screen3.mp4" /> </video>
+        <video id="video3reverse" class="reverse" width="1920 " height="1080" preload="auto">
+            <source src="./videos/vid3/screen3reverse.mp4" /> </video>
+        <!-- popup content -->
+
+        <img id="popup1btn3" class="popupbtn" data-num="1" data-type="static" src="images/popup.png" />
+        <div id="popup1content3" class="popupcontent">
+
+            <img class="handle close " src="./cloudtext/cloud5.png" width="700" height="auto" />
+        </div>
+
+        <img id="popup2btn3" class="popupbtn" data-num="2" data-type="static" src="images/popup.png" />
+        <div id="popup2content3" class="popupcontent">
+      
+            <img class="handle close" src="./cloudtext/cloud6.png" width="700" height="auto" />
+        </div>
+        <img class="pag3" src="./images/page3.png" />
+        <!-- navigation -->
+        <img class="prev" src="images/prevarrow.png" />
+        <img class="next" src="images/nextarrow.png" />
+    </section>
+
+
+    <!-- SCREEN 4 -->
+    <section id="four">
+        <!-- background video -->
+        <video id="video4" class="forward" width="1920 " height="1080" preload="auto">
+            <source src="./videos/vid4/screen4.mp4" /> </video>
+
+        <!-- popup content -->
+
+        <img id="popup1btn4" class="popupbtn" data-num="1" data-type="static" src="images/popup.png" />
+        <div id="popup1content4" class="popupcontent">
+              <img class="handle close " src="./cloudtext/cloud7.png" width="700" height="auto" />
+        </div>
+
+        <img id="popup2btn4" class="popupbtn" data-num="2" data-type="static" src="images/popup.png" />
+        <div id="popup2content4" class="popupcontent">
+                <img class="handle close " src="./cloudtext/cloud8.png" width="700" height="auto" />
+        </div>
+
+
+        <img class="pag4" src="./images/page4.png" />
+        <!-- navigation -->
+        <img class="prev" src="images/prevarrow.png" />
+        
+
+    </section>
+	<a id="home" href="../victoriaHall/index.html"></a>
+
+</body>
+
+</html>
